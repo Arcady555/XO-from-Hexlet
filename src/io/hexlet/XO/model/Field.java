@@ -24,9 +24,7 @@ public class Field {
         if (!checkPoint(point)) {
             throw new InvalidPointException();
         }
-        if (getFigure(point) != null) {
-            throw new AlreadyOccupiedException();
-        }
+
 
             field[point.getCoordinateX()][point.getCoordinateY()] = figure;
     }
