@@ -9,7 +9,7 @@ import io.hexlet.XO.model.exceptions.InvalidPointException;
 
 public class XOCLI {
 
-    public static void main (String[] args) throws InvalidPointException {
+    public static void main(String[] args) throws InvalidPointException {
         final String name1 = "Arcady";
         final String name2 = "neArcady";
 
@@ -21,8 +21,9 @@ public class XOCLI {
 
         final ConsoleView consoleView = new ConsoleView();
         consoleView.show(gameXO);
-        while(consoleView.move(gameXO)) {
+        while (consoleView.move(gameXO)) {
             consoleView.show(gameXO);
 
+        }
     }
 }
